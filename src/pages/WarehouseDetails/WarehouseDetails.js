@@ -27,7 +27,7 @@ const WareHouseDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8081/warehouse/${warehouseId}`)
+      .get(`https://instock-api-production.up.railway.app/warehouse/${warehouseId}`)
       .then((response) => {
         setWarehouse(response.data);
         return fetchInventory();

@@ -13,7 +13,7 @@ const Inventory = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:8081/inventory").then((response) => {
+    axios.get("https://instock-api-production.up.railway.app/inventory").then((response) => {
       setInventories(response.data);
     });
   }, []);
@@ -33,11 +33,11 @@ const Inventory = () => {
 
   const handleDeleteClick = (inventoryid) => {
     axios
-      .delete(`http://localhost:8081/inventory/${inventoryid}`)
+      .delete(`https://instock-api-production.up.railway.app/inventory/${inventoryid}`)
       .then((response) => {
         document.body.classList.remove("hidden__active");
         navigate("/inventory");
-        return axios.get("http://localhost:8081/inventory");
+        return axios.get("https://instock-api-production.up.railway.app/inventory");
       })
       .then((response) => {
         setInventories(response.data);

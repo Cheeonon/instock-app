@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = `http://localhost:8081`;
+const BASE_URL = `https://instock-api-production.up.railway.app`;
 
 export const fetchInventory = () => {
     return axios.get(`${BASE_URL}/inventory/`);

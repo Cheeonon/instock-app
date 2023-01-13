@@ -15,7 +15,7 @@ const Warehouses = () => {
   
 
   useEffect (()=>{
-    axios.get("http://localhost:8081/warehouse")
+    axios.get("https://instock-api-production.up.railway.app/warehouse")
       .then((response)=>{
         setItems(response.data)
       })
@@ -34,11 +34,11 @@ const Warehouses = () => {
   }
 
   const handleDeleteClick = (warehouseid) => {
-    axios.delete(`http://localhost:8081/warehouse/${warehouseid}`)
+    axios.delete(`https://instock-api-production.up.railway.app/warehouse/${warehouseid}`)
       .then ((response)=>{  
         document.body.classList.remove("hidden__active")
         navigate("/warehouses")
-        return axios.get("http://localhost:8081/warehouse")
+        return axios.get("https://instock-api-production.up.railway.app/warehouse")
       })
       .then ((response)=>{
         setItems(response.data)
