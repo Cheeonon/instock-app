@@ -27,9 +27,7 @@ const Inventory = () => {
   };
 
   const handleCancelClick = () => {
-    {
-      document.body.classList.remove("hidden__active");
-    }
+    document.body.classList.remove("hidden__active");
     navigate("/inventory");
   };
 
@@ -37,9 +35,7 @@ const Inventory = () => {
     axios
       .delete(`http://localhost:8081/inventory/${inventoryid}`)
       .then((response) => {
-        {
-          document.body.classList.remove("hidden__active");
-        }
+        document.body.classList.remove("hidden__active");
         navigate("/inventory");
         return axios.get("http://localhost:8081/inventory");
       })

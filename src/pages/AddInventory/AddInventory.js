@@ -46,6 +46,7 @@ const AddInventory = () => {
     setNameValid(true);
     setDescriptionValid(true);
     setCategoryValid(true);
+    setQuantityValid(itemQuantity);
     setQuantityValid(true);
     setWarehouseValid(true);
 

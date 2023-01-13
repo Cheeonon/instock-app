@@ -23,6 +23,7 @@ const EditWarehouse = () => {
       }).catch((error) => {
         console.log(error)
       })
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     // Form Input Validation States (warehouse)

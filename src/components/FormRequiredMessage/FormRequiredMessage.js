@@ -12,6 +12,7 @@ const FormRequiredMessage = ({type}) => {
     } else{
       setText("This field is required")
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text])
 
   return (

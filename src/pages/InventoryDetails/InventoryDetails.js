@@ -3,7 +3,7 @@ import ArrowBack from '../../assets/icons/arrow_back-24px.svg'
 import Edit from '../../assets/icons/edit-24px.svg'
 import './InventoryDetails.scss'
 import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { fetchInventoryById } from '../../utils/api';
 
 const InventoryDetails = () => {

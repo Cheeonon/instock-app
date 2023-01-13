@@ -64,6 +64,7 @@ const EditInventory = () => {
     setDescriptionValid(true);
     setCategoryValid(true);
     setQuantityValid(true);
+    setWarehouseValid(warehouseValid);
     setWarehouseValid(true);
 
     const item = {

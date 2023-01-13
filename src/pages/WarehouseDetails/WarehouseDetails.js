@@ -112,6 +112,8 @@ const WareHouseDetails = () => {
                   quantity={inventory.quantity} 
                 />
               );
+            } else{
+              return null;
             }
           })}
         </div>
