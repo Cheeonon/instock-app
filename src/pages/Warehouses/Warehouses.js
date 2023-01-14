@@ -13,6 +13,7 @@ const Warehouses = () => {
   const {warehouseid} = useParams()
   const navigate = useNavigate()
   
+  console.log("first")
 
   useEffect (()=>{
     axios.get("https://instock-api-production.up.railway.app/warehouse")

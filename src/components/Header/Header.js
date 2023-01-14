@@ -1,6 +1,7 @@
 import "./Header.scss";
 import logo from "../../assets/logo/InStock-Logo_2x.png";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
 
@@ -21,16 +22,16 @@ function Header() {
   return (
     <header>
       <nav className="header">
-        <a href="/">
+        <Link to="/">
           <img className="header__logo" src={logo} alt="instock-logo" />
-        </a>
+        </Link>
         <div className="header__buttons">
-          <a href="/warehouses" className={active === "warehouses" ? "header__btn header__btn--active" : "header__btn"} onClick={handleActive}>
+          <Link to="/warehouses" className={active === "warehouses" ? "header__btn header__btn--active" : "header__btn"} onClick={handleActive}>
             Warehouses
-          </a>
-          <a href="/inventory" className={active === "inventory" ? "header__btn header__btn--active" : "header__btn"} onClick={handleActive}>
+          </Link>
+          <Link to="/inventory" className={active === "inventory" ? "header__btn header__btn--active" : "header__btn"} onClick={handleActive}>
             Inventory
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
