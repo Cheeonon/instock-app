@@ -164,16 +164,15 @@
 }
 
 .overlay {
-
     background-color: white;
     height: 130vh;
     margin-top: -7rem;
-    padding: 1rem;
+    padding: 3rem;
     position: fixed;
     z-index: 3;
 
     @include tablet {
-        height: 18rem;
+        height: 20rem;
         width: 80%;
         z-index: 6;
         margin: 0 auto;
@@ -184,7 +183,6 @@
     @include desktop {
         height: 22rem;
         width: 60%;
-        margin-left: 20%;
     }
 
     &__buttons {

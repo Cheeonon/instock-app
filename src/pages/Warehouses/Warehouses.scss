@@ -25,6 +25,8 @@
 .label__holder--title {
     min-width: 23%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .sort__logo{
@@ -40,7 +42,7 @@
     background-color: $white;
     border-radius: 4px;
     box-shadow: 1px 2px 4px $cloud;
-
+    padding: 2rem;
 }
 
 .item__search {
@@ -48,6 +50,7 @@
     border-radius: 20px;
     border: 1px solid $cloud;
     cursor: pointer;
+    padding: 1rem;
 
     &--img {
         width: 1.5rem;
